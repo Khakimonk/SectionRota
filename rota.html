@@ -8,34 +8,52 @@
     </head>
 
     <body>
-        <header>
-            <h1>Operations Rota</h1>
-            <h4>Week Commencing</h4>
-        </header>
-        <table border="1">
-          <tr>
-            <th colspan="2">Name</th>
-            <th colspan="2">Sunday</th>
-            <th colspan="2">Monday</th>
-            <th colspan="2">Tuesday</th>
-            <th colspan="2">Wednesday</th>
-            <th colspan="2">Thursday</th>
-            <th colspan="2">Friday</th>
-            <th colspan="2">Saturday</th>
-            <th>Hours</th>
-          </tr>
-          <tr>
-            <td>James</td><td>Bint</td>
-            <td>08:30</td><td>17:30</td>
-            <td>08:30</td><td>17:30</td>
-            <td>08:30</td><td>17:30</td>
-            <td>08:30</td><td>17:30</td>
-            <td>08:30</td><td>17:30</td>
-            <td>08:30</td><td>17:30</td>
-            <td>08:30</td><td>17:30</td>
-            <td>69</td>
-          </tr>
-        </table>
+      <header><h1>Operations Rota</h1></header>
+        <div class="body-content">
+                <form id="rota" method="post" name="sectionRota">
+                    <table border="1" cellspacing="0" id="mainRota">
+                        <tr>
+                          <th><input class="check_box" type="checkbox" size="2"/></th>
+                            <th colspan="2" class="rHeader">Name</th>
+                            <th class="rota_spacer"></th>
+                            <th colspan="2" class="rHeader">Sunday</th>
+                            <th colspan="2" class="rHeader">Monday</th>
+                            <th colspan="2" class="rHeader">Tuesday</th>
+                            <th colspan="2" class="rHeader">Wednesday</th>
+                            <th colspan="2" class="rHeader">Thursday</th>
+                            <th colspan="2" class="rHeader">Friday</th>
+                            <th colspan="2" class="rHeader">Saturday</th>
+                            <th class="rHeader">Hours</th>
+                        </tr>
+                        <tr id="inputRow">
+                          <td><input type='checkbox' class='case'/></td>
+                            <td colspan="2"><input type="text" id="Name"/></td>
+                            <td class="rota_spacer"></td>
+                            <td><input type="text" size="5" id="sunCol1"/></td>
+                            <td><input type="text" size="5" id="sunCol2"/></td>
+                            <td><input type="text" size="5" id="monCol1"/></td>
+                            <td><input type="text" size="5" id="monCol2"/></td>
+                            <td><input type="text" size="5" id="tueCol1"/></td>
+                            <td><input type="text" size="5" id="tueCol2"/></td>
+                            <td><input type="text" size="5" id="wedCol1"/></td>
+                            <td><input type="text" size="5" id="wedCol2"/></td>
+                            <td><input type="text" size="5" id="thuCol1"/></td>
+                            <td><input type="text" size="5" id="thuCol2"/></td>
+                            <td><input type="text" size="5" id="friCol1"/></td>
+                            <td><input type="text" size="5" id="friCol2"/></td>
+                            <td><input type="text" size="5" id="satCol1"/></td>
+                            <td><input type="text" size="5" id="satCol2"/></td>
+                            <td><input type="text" size="5" id="totHours"/></td>
+                        </tr>
+                    </table>
+                </form>
+                <button class="functionBtn" id="addRow">Add Row</button>
+                <button class="functionBtn" id="deleteRow">Delete Selected Row</button>
+
+
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="Function/rota.js"></script>
     </body>
 
 </html>
